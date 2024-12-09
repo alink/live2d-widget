@@ -19,15 +19,13 @@ Add Live2D widget to web page. Compatible with PJAX.
 
 You can also check out example web pages:
 
-- Check the effect in the lower left corner of [Mimi's Blog](https://zhangshuqiao.org)
-- [demo.html](https://stevenjoezhang.github.io/live2d-widget/demo/demo.html) to demonstrate basic functionality
-- [login.html](https://stevenjoezhang.github.io/live2d-widget/demo/login.html) to imitate the login interface of NPM
+- Check the effect in the lower left corner of [Example](https://example.alnkr.cn)
 
 ## Usage
 
 If you are a beginner or only need the basic functionality, you can simply add the following line of code to the `head` or `body` of your HTML page to load the widget:
 ```xml
-<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+<script src="https://code.webcache.cn/gh/alink/live2d-widget/autoload.js"></script>
 ```
 The placement of the code depends on how your website is built. For example, if you are using [Hexo](https://hexo.io), you need to add the above code to the template file of your theme. The modification process is similar for pages generated using various template engines.  
 If your website uses PJAX, since the widget does not need to be refreshed on every page, make sure to place the script outside the PJAX refresh area.
@@ -41,7 +39,7 @@ You can refer to the source code of `autoload.js` to see the available configura
 
 | Option | Type | Default Value | Description |
 | ------ | ---- | ------------- | ----------- |
-| `waifuPath` | `string` | `https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/waifu-tips.json` | Path to the widget resources, can be modified |
+| `waifuPath` | `string` | `https://code.webcache.cn/gh/alink/live2d-widget/waifu-tips.json` | Path to the widget resources, can be modified |
 | `apiPath` | `string` | `https://live2d.fghrsh.net/api/` | API path, optional |
 | `cdnPath` | `string` | `https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/` | CDN path, optional |
 | `tools` | `string[]` | see `autoload.js` | Buttons of the loaded tools, optional |
@@ -63,7 +61,7 @@ By default, the CSS selector rules in `waifu-tips.json` are effective for the He
 To deploy the development testing environment of this project locally, you need to install Node.js and npm, then execute the following commands:
 
 ```bash
-git clone https://github.com/stevenjoezhang/live2d-widget.git
+git clone https://github.com/alink/live2d-widget.git
 npm install
 npm run build
 ```
@@ -179,11 +177,3 @@ http://www.live2d.com/eula/live2d-open-software-license-agreement_en.html
 
 https://community.live2d.com/discussion/140/webgl-developer-licence-and-javascript-question
 
-## Update Log
-
-On October 31, 2018, the original API provided by fghrsh was discontinued. Please update to the new address. Refer to the following article for more information:  
-https://www.fghrsh.net/post/170.html
-
-Starting from January 1, 2020, this project no longer depends on jQuery.
-
-Starting from November 1, 2022, this project no longer requires users to separately load Font Awesome.
