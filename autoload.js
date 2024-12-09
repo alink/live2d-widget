@@ -1,9 +1,9 @@
 // live2d_path 参数建议使用绝对路径
 if(typeof(live2d_path)=='undefined') {
-	const live2d_path = "https://code.webcache.cn/gh/alink/live2d-widget/";
+	var live2d_path = "https://code.webcache.cn/gh/alink/live2d-widget/";
 }
 if(typeof(live2d_cdn_path)=='undefined') {
-	const live2d_cdn_path = "https://code.webcache.cn/gh/alink/live2d-widget/";
+	var live2d_cdn_path = "https://code.webcache.cn/gh/alink/live2d-widget/";
 }
 
 // 封装异步加载资源的方法
